@@ -1,0 +1,72 @@
+{
+  "keys": [
+    "R1C1", "R1C2", "R1C3", "R1C4", "R1C5",                  "R1C6", "R1C7", "R1C8", "R1C9", "R1C10",
+    "R2C1", "R2C2", "R2C3", "R2C4", "R2C5",                  "R2C6", "R2C7", "R2C8", "R2C9", "R2C10",
+    "R3C1", "R3C2", "R3C3", "R3C4", "R3C5", "R311", "R312", "R3C6", "R3C7", "R3C8", "R3C9", "R3C10",
+    "R4C1", "R4C2", "R4C3", "R4C4", "R4C5", "R411", "R412", "R4C6", "R4C7", "R4C8", "R4C9", "R4C10"
+  ],
+  "parameters": {
+    "layout_function_name": "LAYOUT",
+    "chord_timeout": 100,
+    "dance_timeout": 200,
+    "leader_timeout": 750,
+    "tap_timeout": 50,
+    "command_max_length": 5,
+    "leader_max_length": 5,
+    "dynamic_macro_max_length": 20,
+    "string_max_length": 16,
+    "long_press_multiplier": 3,
+    "default_pseudolayer": "Colemak_DHm"
+  },
+  "layers": [
+    {
+      "type": "auto"
+    }
+  ],
+  "chord_sets": [
+    {
+      "name": "rows",
+      "chords": [
+        ["R1C1"], ["R1C2"], ["R1C3"], ["R1C4"], ["R1C5"], ["R1C6"], ["R1C7"], ["R1C8"], ["R1C9"], ["R1C10"],
+        ["R2C1"], ["R2C2"], ["R2C3"], ["R2C4"], ["R2C5"], ["R2C6"], ["R2C7"], ["R2C8"], ["R2C9"], ["R2C10"],
+        ["R3C1"], ["R3C2"], ["R3C3"], ["R3C4"], ["R3C5"], ["R3C6"], ["R3C7"], ["R3C8"], ["R3C9"], ["R3C10"],
+        ["R4C4"], ["R4C5"], ["R4C6"], ["R4C7"]
+      ]
+    }
+  ],
+  "pseudolayers": [
+    {
+      "name": "ALWAYS_ON",
+      "chords": [
+        {
+          "type": "visual",
+          "chord": [
+            " ", " ", "X", "X", " ",           " ", " ", " ", " ", " ",
+            " ", " ", "X", "X", " ",           " ", " ", " ", " ", " ",
+            " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ",
+            " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "
+          ],
+          "keycode": "CLEAR_KB"
+        }
+      ]
+    },
+    {
+      "name": "Colemak_DHm",
+        "chords": [
+          {
+            "type": "chord_set",
+            "set": "rows",
+            "keycodes": [
+              "Q", "W", "F", "P", "B", "J", "L", "U", "Y", ";",
+              "A", "R", "S", "T", "G", "M", "N", "E", "I", "O",
+              "Z", "X", "C", "D", "V", "K", "H", ",", ".", "/",
+              "ESC", "SPACE", "BSPC", "ENTER"
+            ]
+          }
+        ]
+    }
+  ],
+  "leader_sequences": [],
+  "extra_code": "",
+  "extra_dependencies": []
+}
